@@ -1,0 +1,12 @@
+
+{% extends "master.html" %}
+
+{% block content %}
+
+    <ul>
+        <li>Nome de usuário: {{request.user.username}}</li>
+        <li>E-mail: {{request.user.email}}</li>
+        <li>Senha: {{request.user.password}}</li>
+    </ul>
+
+{% endblock  %}
